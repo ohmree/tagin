@@ -1,11 +1,16 @@
 {
-	"include": ["src"],
-  "exclude": ["dist", "node_modules"],
-  "compilerOptions": {
+	"include": ["src/*"],
+	"exclude": ["dist", "node_modules", "vite.config", "vite.min.config"],
+	"compilerOptions": {
+		"rootDir": "src",
+		"isolatedModules": true,
 		"target": "ESNext",
-    "outDir": "dist",
-    "declaration": true,
-    "declarationDir": ".",
-		"emitDeclarationOnly": true
-  }
+		"outDir": "dist",
+		"declaration": true,
+		"declarationDir": "dist",
+		"emitDeclarationOnly": true,
+		"resolveJsonModule": true,
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true
+	}
 }

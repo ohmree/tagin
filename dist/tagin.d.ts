@@ -1,3 +1,4 @@
+import './tagin.scss';
 declare class Tagin {
     private classElement;
     private classWrapper;

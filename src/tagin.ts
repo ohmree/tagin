@@ -1,3 +1,5 @@
+import './tagin.scss'
+
 class Tagin {
 	private classElement     : string = 'tagin'
 	private classWrapper     : string = 'tagin-wrapper'
